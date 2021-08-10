@@ -3,7 +3,6 @@
 #define ADDNEWFILM_H
 
 #include <QWidget>
-#include "ekino.h"
 
 namespace Ui {
 class AddNewFilm;
@@ -19,7 +18,6 @@ public:
 
 signals:
     void EditCatalog();
-    void GiveListToEvery(film *list);
 
 private slots:
     void on_BAdd_clicked();

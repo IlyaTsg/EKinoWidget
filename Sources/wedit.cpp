@@ -1,4 +1,4 @@
-#include "wedit.h"
+#include "../Headers/wedit.h"
 #include "ui_wedit.h"
 
 WEdit::WEdit(QWidget *parent) :
@@ -7,8 +7,11 @@ WEdit::WEdit(QWidget *parent) :
 {
     ui->setupUi(this);
     AddWindow = new AddNewFilm();
-    connect(AddWindow, SIGNAL(GiveListToEvery(film*)), this, SLOT(GetList(film*)));
+    DelWindow = new WDelete();
+    ChangeWindow = new WChange();
     connect(AddWindow, &AddNewFilm::EditCatalog, this, &WEdit::show);
+    connect(DelWindow, &WDelete::EditCatalog, this, &WEdit::show);
+    connect(ChangeWindow, &WChange::EditCatalog, this, &WEdit::show);
 }
 
 WEdit::~WEdit()
@@ -22,6 +25,11 @@ void WEdit::on_BAdd_clicked()
     hide();
 }
 
+void WEdit::on_BDel_clicked()
+{
+    DelWindow->show();
+    hide();
+}
 
 void WEdit::on_BBack_clicked()
 {
@@ -29,7 +37,9 @@ void WEdit::on_BBack_clicked()
     emit MainMenu();
 }
 
-void WEdit::GetList(film *list)
+void WEdit::on_BEdit_clicked()
 {
-    std::cout << list->title << std::endl;
+    ChangeWindow->show();
+    hide();
 }
+

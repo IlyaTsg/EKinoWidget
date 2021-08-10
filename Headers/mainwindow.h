@@ -3,7 +3,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "wedit.h"
+#include "../Headers/wedit.h"
+#include "../Headers/wfind.h"
+#include "../Headers/wsort.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,8 +24,15 @@ private slots:
 
     void on_BEdit_clicked();
 
+    void on_BFind_clicked();
+
+    void on_BSort_clicked();
+
 private:
     Ui::MainWindow *ui;
+
     WEdit *EditWindow;
+    WFind *FindWinfow;
+    WSort *SortWindow;
 };
 #endif // MAINWINDOW_H

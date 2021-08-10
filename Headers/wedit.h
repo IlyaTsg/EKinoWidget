@@ -3,7 +3,9 @@
 #define WEDIT_H
 
 #include <QWidget>
-#include "addnewfilm.h"
+#include "../Headers/addnewfilm.h"
+#include "../Headers/wdelete.h"
+#include "../Headers/wchange.h"
 
 namespace Ui {
 class WEdit;
@@ -25,11 +27,15 @@ private slots:
 
     void on_BBack_clicked();
 
-    void GetList(film *list);
+    void on_BDel_clicked();
+
+    void on_BEdit_clicked();
 
 private:
     Ui::WEdit *ui;
     AddNewFilm *AddWindow;
+    WDelete *DelWindow;
+    WChange *ChangeWindow;
 };
 
 #endif // WEDIT_H

@@ -9,21 +9,32 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    addnewfilm.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    wedit.cpp
+    Sources/addnewfilm.cpp \
+    Sources/main.cpp \
+    Sources/mainwindow.cpp \
+    Sources/wchange.cpp \
+    Sources/wdelete.cpp \
+    Sources/wedit.cpp \
+    Sources/wfind.cpp \
+    Sources/wsort.cpp
 
 HEADERS += \
-    addnewfilm.h \
-    mainwindow.h \
-    ekino.h \
-    wedit.h
+    Headers/addnewfilm.h \
+    Headers/mainwindow.h \
+    Headers/wchange.h \
+    Headers/wdelete.h \
+    Headers/wedit.h \
+    Headers/wfind.h \
+    Headers/wsort.h
 
 FORMS += \
-    addnewfilm.ui \
-    mainwindow.ui \
-    wedit.ui
+    Forms/addnewfilm.ui \
+    Forms/mainwindow.ui \
+    Forms/wchange.ui \
+    Forms/wdelete.ui \
+    Forms/wedit.ui \
+    Forms/wfind.ui \
+    Forms/wsort.ui
 
 TRANSLATIONS += \
     Ekino_ru_RU.ts
