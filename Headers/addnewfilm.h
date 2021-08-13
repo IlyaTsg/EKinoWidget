@@ -3,6 +3,7 @@
 #define ADDNEWFILM_H
 
 #include <QWidget>
+#include <QtSql>
 
 namespace Ui {
 class AddNewFilm;

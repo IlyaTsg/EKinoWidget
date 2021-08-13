@@ -6,12 +6,15 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     EditWindow = new WEdit();
     FindWinfow = new WFind();
     SortWindow = new WSort();
+    CollWindow = new WCollection();
     connect(EditWindow, &WEdit::MainMenu, this, &MainWindow::show); // Обработка сигнала от EditWindow, открытие основного окна
     connect(FindWinfow, &WFind::MainMenu, this, &MainWindow::show);
     connect(SortWindow, &WSort::MainMenu, this, &MainWindow::show);
+    connect(CollWindow, &WCollection::MainMenu, this, &MainWindow::show);
 }
 
 MainWindow::~MainWindow()
@@ -42,6 +45,13 @@ void MainWindow::on_BFind_clicked()
 void MainWindow::on_BSort_clicked()
 {
     SortWindow->show();
+    hide();
+}
+
+
+void MainWindow::on_BOutput_clicked()
+{
+    CollWindow->show();
     hide();
 }
 
