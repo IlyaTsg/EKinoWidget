@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(FindWinfow, &WFind::MainMenu, this, &MainWindow::show);
     connect(SortWindow, &WSort::MainMenu, this, &MainWindow::show);
     connect(CollWindow, &WCollection::MainMenu, this, &MainWindow::show);
+    connect(this, SIGNAL(ShowFilms()), CollWindow, SLOT(on_BNext_clicked()));
 }
 
 MainWindow::~MainWindow()
@@ -51,6 +52,7 @@ void MainWindow::on_BSort_clicked()
 
 void MainWindow::on_BOutput_clicked()
 {
+    emit ShowFilms(); // Сразу открыть базу данных по открытии окна простомтра коллекции
     CollWindow->show();
     hide();
 }

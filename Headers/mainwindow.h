@@ -21,6 +21,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+signals:
+    void ShowFilms();
+
 private slots:
     void on_BExit_clicked();
 

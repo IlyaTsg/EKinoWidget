@@ -2,6 +2,7 @@
 #define WCOLLECTION_H
 
 #include <QWidget>
+#include <QtSql>
 
 namespace Ui {
 class WCollection;
@@ -20,6 +21,8 @@ signals:
 
 private slots:
     void on_BBack_clicked();
+
+    void on_BNext_clicked();
 
 private:
     Ui::WCollection *ui;
