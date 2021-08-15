@@ -1,4 +1,4 @@
-#include "../Headers/wedit.h"
+#include "../EKinoWidget/Headers/wedit.h"
 #include "ui_wedit.h"
 
 WEdit::WEdit(QWidget *parent) :

@@ -1,4 +1,4 @@
-#include "../Headers/mainwindow.h"
+#include "../EKinoWidget/Headers/mainwindow.h"
 
 #include <QApplication>
 #include <QLocale>

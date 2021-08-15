@@ -13,12 +13,133 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Жанр:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Кинопоиск рейтинг:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LStar">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>280</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>test</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LImdb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>220</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>test</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>IMdb рейтинг:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BNext">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>350</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Следующий</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Название:</string>
+   </property>
+  </widget>
   <widget class="QLabel" name="LEKino">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>10</y>
-     <width>221</width>
+     <x>50</x>
+     <y>20</y>
+     <width>241</width>
      <height>41</height>
     </rect>
    </property>
@@ -28,28 +149,159 @@
     </font>
    </property>
    <property name="text">
-    <string>Изменение фильма</string>
+    <string>Изменение коллекции</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="BChange">
+  <widget class="QLabel" name="Lkinop">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>300</y>
-     <width>111</width>
-     <height>31</height>
+     <x>200</x>
+     <y>250</y>
+     <width>121</width>
+     <height>21</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>Удалить</string>
+    <string>test</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LTitle">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>90</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>test</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LGenre">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>150</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>test</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Дата выпуска:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LDirector">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>120</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>test</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LDate">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>180</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>test</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>280</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Кинопоиск звёзды:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Режиссёр:</string>
    </property>
   </widget>
   <widget class="QPushButton" name="BBack">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>10</x>
      <y>350</y>
-     <width>111</width>
+     <width>101</width>
      <height>31</height>
     </rect>
    </property>
@@ -57,17 +309,17 @@
     <string>Назад</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QPushButton" name="BDelete">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>70</y>
-     <width>261</width>
-     <height>21</height>
+     <x>120</x>
+     <y>350</y>
+     <width>101</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Выберете фильм из списка(сделать скролл)</string>
+    <string>Удалить</string>
    </property>
   </widget>
  </widget>

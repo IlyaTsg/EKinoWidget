@@ -1,4 +1,4 @@
-#include "../Headers/wsort.h"
+#include "../EKinoWidget/Headers/wsort.h"
 #include "ui_wsort.h"
 
 WSort::WSort(QWidget *parent) :

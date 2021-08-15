@@ -1,4 +1,4 @@
-#include "../Headers/wfind.h"
+#include "../EKinoWidget/Headers/wfind.h"
 #include "ui_wfind.h"
 
 WFind::WFind(QWidget *parent) :

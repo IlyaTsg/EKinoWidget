@@ -1,4 +1,4 @@
-#include "../Headers/wdelete.h"
+#include "../EKinoWidget/Headers/wdelete.h"
 #include "ui_wdelete.h"
 
 WDelete::WDelete(QWidget *parent) :
@@ -15,6 +15,11 @@ WDelete::~WDelete()
 
 void WDelete::on_BBack_clicked()
 {
-    hide();
-    emit EditCatalog();
+
 }
+
+void WDelete::on_BNext_clicked()
+{
+
+}
+

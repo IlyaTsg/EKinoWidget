@@ -1,4 +1,4 @@
-#include "../Headers/wchange.h"
+#include "../EKinoWidget/Headers/wchange.h"
 #include "ui_wchange.h"
 
 WChange::WChange(QWidget *parent) :
